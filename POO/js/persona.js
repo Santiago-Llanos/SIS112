@@ -20,13 +20,28 @@ class Persona {
     }
 
     Universidad() {
-        return 'Estudio en la universidad ' + this.universidad;
+        return 'En la universidad ' + this.universidad;
     }
 
     Modificar_Saludo() {
-        this.nombre = prompt ("Ingrese su nuevo nombre")
-        return 'Buenasss mi nombre es' + this.nombre;
+        this.nombre = prompt ("Ingrese su nuevo saludo")
+        return 'Hola,'+ this.nombre;
    }
+
+    Modificar_Edad() {
+      this.edad = prompt ("Ingrese su nueva edad porfavor")
+      return '¡Felicidades! tienes ' + this.edad + ' años.';
+  }
+    Modificar_Carrera() {
+      this.carrera = prompt ("Colocar su nueva carrera")
+      return 'Estoy estudiando ' + this.carrera;
+  }
+
+   Modificar_Universidad() {
+     this.universidad = prompt ("Colocar su nueva universidad")
+     return 'En la universidad ' + this.universidad;
+  }
+  
 }
   // Crear una instancia de la clase Persona
   const persona = new Persona('Santiago', 18, 'Ingeniería Industrial', 'Catolica', 'Saludo');
@@ -36,7 +51,8 @@ class Persona {
   const edad = document.getElementById('edad');
   const carrera = document.getElementById('carrera');
   const universidad = document.getElementById('universidad');
-  const saludo = document.getElementById('saludo');
+  
+  
 
   // Función para saludar
    function botonSaludar() {
@@ -58,7 +74,19 @@ class Persona {
   }
 
   function botonModificarSaludo() {
-    saludo.textContent = persona.Modificar_Saludo();
+    Saludar.textContent = persona.Modificar_Saludo();
     
+  }
+
+  function botonModificarEdad() {
+    edad.textContent = persona.Modificar_Edad();
+  }
+
+  function botonModificarCarrera() {
+    carrera.textContent = persona.Modificar_Carrera();
+  }
+
+  function botonModificarUniversidad() {
+    universidad.textContent = persona.Modificar_Universidad();
   }
 
