@@ -24,8 +24,8 @@ class Persona {
     }
 
     Modificar_Saludo() {
-        this.nombre = prompt ("Ingrese su nuevo saludo")
-        return 'Hola,'+ this.nombre;
+        this.nombre = prompt ("Ingrese su nuevo nombre")
+        return 'Hola, mi nombre es ' + this.nombre + ' y tengo ' + this.edad + ' años.'
    }
 
     Modificar_Edad() {
@@ -41,10 +41,26 @@ class Persona {
      this.universidad = prompt ("Colocar su nueva universidad")
      return 'En la universidad ' + this.universidad;
   }
-  
+   
+   Eliminar_Saludo() {
+    delete 'Hola, mi nombre es ' + this.nombre + ' y tengo ' + this.edad + ' años.'
+    
+   }
+
+   Eliminar_Edad() {
+    delete '¡Felicidades! tienes ' + this.edad + ' años.';
+   }
+   
+   Eliminar_Carrera() {
+    delete 'Estoy estudiando ' + this.carrera;
+   }
+
+   Eliminar_Universidad() {
+    delete 'En la universidad ' + this.universidad;
+   }
 }
   // Crear una instancia de la clase Persona
-  const persona = new Persona('Santiago', 18, 'Ingeniería Industrial', 'Catolica', 'Saludo');
+  const persona = new Persona('Santiago', 18, 'Ingeniería Industrial', 'Catolica',);
   
   // Inicializar los elementos HTML
   const Saludar = document.getElementById('saludar'); //obtener cosas de hatml a js, document.getElementById (id, escrito igual)
@@ -88,5 +104,21 @@ class Persona {
 
   function botonModificarUniversidad() {
     universidad.textContent = persona.Modificar_Universidad();
+  }
+
+  function botonEliminarSaludo() {
+    saludar.textContent = persona.Eliminar_Saludo();
+  }
+
+  function botonEliminarEdad() {
+    edad.textContent = persona.Eliminar_Edad();
+  }
+
+  function botonEliminarCarrera() {
+    carrera.textContent = persona.Eliminar_Carrera();
+  }
+
+  function botonEliminarUniversidad() {
+    universidad.textContent = persona.Eliminar_Universidad();
   }
 
