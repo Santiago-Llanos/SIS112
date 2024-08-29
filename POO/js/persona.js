@@ -24,21 +24,38 @@ class Persona {
     }
 
     Modificar_Saludo() {
-        this.nombre = prompt ("Ingrese su nuevo nombre")
+      this.nombre = prompt("Ingresa un nuevo nombre");
+      while (!this.nombre || !isNaN(this.nombre)) {  
+          alert("Nombre invalido, coloca letras porfavor");
+          this.nombre = prompt("Ingresa nuevamente el nombre");
+        }
         return 'Hola, mi nombre es ' + this.nombre + ' y tengo ' + this.edad + ' años.'
-   }
+    }
 
     Modificar_Edad() {
-      this.edad = prompt ("Ingrese su nueva edad porfavor")
-      return '¡Felicidades! tienes ' + this.edad + ' años.';
-  }
+        this.edad = prompt("Ingrese su nueva edad");
+      while (this.edad <= 0) {
+          alert("Numero invalido, porfavor ponga un numero mayor a cero");
+          this.edad = prompt("Ingrese su edad nuevamente");
+        }
+        return '¡Felicidades! tienes ' + this.edad + ' años.';
+    }
+   
     Modificar_Carrera() {
       this.carrera = prompt ("Colocar su nueva carrera")
+      while (!this.carrera || !isNaN(this.carrera)) {
+        alert("Carrera invalida, coloca letras porfavor");
+        this.carrera = prompt("Ingresa nuevamente la carrera");
+      }
       return 'Estoy estudiando ' + this.carrera;
   }
 
    Modificar_Universidad() {
      this.universidad = prompt ("Colocar su nueva universidad")
+     while (!this.universidad || !isNaN(this.universidad )) {
+      alert("Universidad invalida, coloca letras porfavor");
+      this.universidad  = prompt("Ingresa nuevamente el nombre");
+    }
      return 'En la universidad ' + this.universidad;
   }
    
@@ -90,7 +107,7 @@ class Persona {
   }
 
   function botonModificarSaludo() {
-    Saludar.textContent = persona.Modificar_Saludo();
+    saludar.textContent = persona.Modificar_Saludo();
     
   }
 
