@@ -381,7 +381,6 @@ function botonModificarCantidadInscritosProba() {
   probabilidad.textContent = probabilidadYEstadistica.modificarCantidadInscritos();
 }
 
-
 function botonEliminarAtributosCalculo() {
   calculo.textContent = calculo1.eliminarAtributos();
 }
