@@ -1,5 +1,5 @@
 class Materia {
-  constructor(nombreMateria, sigla, docente, horarios, aula, prerequisito, carrera, universidad, cantidadInscritos) {
+  constructor(nombreMateria, sigla, docente, horarios, aula, prerequisito, carrera, universidad, cantidadInscritos, modalidad,calificacionMinimaAPprobacion,temas,ubicaionLatitudLongitud) {
     this.nombreMateria = nombreMateria;
     this.sigla = sigla;
     this.docente = docente;
@@ -9,11 +9,15 @@ class Materia {
     this.carrera = carrera;
     this.universidad = universidad;
     this.cantidadInscritos = cantidadInscritos;
+    this.modalidad = modalidad;
+    this.calificacionMinimaAPprobacion = calificacionMinimaAPprobacion;
+    this.temas = temas;
+    this.ubicaionLatitudLongitud = ubicaionLatitudLongitud;
   }
 
   // Método para mostrar la información de la materia
   mostrarInformacion() {
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar el nombre de la materia
@@ -23,7 +27,7 @@ class Materia {
       alert("Nombre de materia inválido, por favor ingrese letras");
       this.nombreMateria = prompt("Ingrese el nuevo nombre de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar la sigla de la materia
@@ -33,7 +37,7 @@ class Materia {
       alert("Sigla inválida, por favor ingrese nuevamentes");
       this.sigla = prompt("Ingrese la nueva sigla de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar el docente de la materia
@@ -43,7 +47,7 @@ class Materia {
       alert("Docente inválido, por favor ingrese letras");
       this.docente = prompt("Ingrese el nuevo docente de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}- modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar los horarios de la materia
@@ -53,7 +57,7 @@ class Materia {
       alert("Horarios inválidos, por favor ingrese letras");
       this.horarios = prompt("Ingrese los nuevos horarios de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}- modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar el aula de la materia
@@ -63,7 +67,7 @@ class Materia {
       alert("Aula inválida, por favor ingrese letras");
       this.aula = prompt("Ingrese el nuevo aula de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar el prerequisito de la materia
@@ -73,7 +77,7 @@ class Materia {
       alert("Prerequisito inválido, por favor ingrese letras");
       this.prerequisito = prompt("Ingrese el nuevo prerequisito de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar la carrera de la materia
@@ -83,7 +87,7 @@ class Materia {
       alert("Carrera inválida, por favor ingrese letras");
       this.carrera = prompt("Ingrese la nueva carrera de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}- modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   // Método para modificar la universidad de la materia
@@ -93,7 +97,7 @@ class Materia {
       alert("Universidad inválida, por favor ingrese letras");
       this.universidad= prompt("Ingrese la nueva universidad de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
   // Método para modificar la cantidad de inscritos de la materia
   modificarCantidadInscritos() {
@@ -102,11 +106,61 @@ class Materia {
       alert("Cantidad de inscritos inválida, por favor ingrese un número mayor a cero");
       this.cantidadInscritos = prompt("Ingrese la nueva cantidad de inscritos de la materia");
     }
-    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
+  modificaModalidad() {
+    this.modalidad = prompt("Ingrese la nueva modalidad de la materia (presencial, online, híbrida)").toLowerCase().trim();
+
+    // Validación de que la modalidad no contiene números y es una de las opciones válidas
+    while (!/^[a-zñÑáéíóúÁÉÍÓÚ\s]+$/.test(this.modalidad) || 
+          !(this.modalidad === "presencial" || this.modalidad === "online" || this.modalidad === "híbrida")) {
+        alert("Modalidad no válida. Por favor ingrese 'presencial', 'online' o 'híbrida', sin números.");
+        this.modalidad = prompt("Ingrese la nueva modalidad de la materia").toLowerCase().trim();
+    }
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
+    }
+  
+  modificarCalificacionMinima() {
+    this.calificacionMinimaAPprobacion = prompt("Ingrese su nueva calificacion minima")
+    this.calificacionMinimaAPprobacion = Number(this.calificacionMinimaAPprobacion);
+
+    if (!isNaN(this.calificacionMinimaAPprobacion) && this.calificacionMinimaAPprobacion >= 0 && this.calificacionMinimaAPprobacion <= 100) {
+      this.calificacionMinimaAPprobacion = this.calificacionMinimaAPprobacion;
+    } else {
+        alert("Entrada no válida. Por favor ingrese un número entre 0 y 100.");
+        this.calificacionMinimaAPprobacion = prompt("Ingrese su nueva calificacion")
+    }
+    return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
+
+  }
+
+  modificarTemas() {
+    this.temas = prompt("Ingrese su nuevos temas:")
+    while (!this.temas || !/^[a-zA-ZñÑáéíóúÁÉÍÓÚ,\s]+$/.test(this.temas)) {
+      alert("Entrada inválida. Por favor ingrese una lista de temas separados por comas, utilizando solo letras.");
+      this.temas = prompt("Ingrese los temas nuevamente");
+  }
+
+  // Convertimos la cadena a un array de temas, quitando los espacios en blanco alrededor
+  this.temas = this.temas.split(",").map(tema => tema.trim());
+return  `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
+}
+
+
+ modificarUbicacion() {
+  this.ubicaionLatitudLongitud = prompt("Ingrese la nueva ubicacion")
+  while (! this.ubicaionLatitudLongitud  || !/^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/.test( this.ubicaionLatitudLongitud )) {
+    alert("Ubicación inválida. Por favor ingrese en el formato Latitud,Longitud (ejemplo: -17.695191,-63.1514697)");
+    this.ubicaionLatitudLongitud  = prompt("Ingrese la ubicación nuevamente");
+}
+return `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
+ }
+
+
+
   eliminarAtributos() {
-  delete `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}`;
+  delete `Materia: ${this.nombreMateria} - Sigla: ${this.sigla} - Docente: ${this.docente} - Horarios: ${this.horarios} - Aula: ${this.aula} - Prerequisito: ${this.prerequisito} - Carrera: ${this.carrera} - Universidad: ${this.universidad} - Cantidad de inscritos: ${this.cantidadInscritos}Cantidad de inscritos: ${this.cantidadInscritos} - modalidad: ${this.modalidad} - calificacion Minima: ${this.calificacionMinimaAPprobacion} - temas: ${this.temas} - ubicacion: ${this.ubicaionLatitudLongitud}`;
   }
 
   eliminarNombreMateria() {
@@ -164,12 +218,12 @@ class Materia {
 }
 
 // Crear una instancia de la clase Materia
-const calculo1 = new Materia("Cálculo 1", "MAT-132", "Victor Hugo Aapiazu", "Lunes 7-9, Miércoles 7-9", "Aula 10 N4", "Mate Basica", "Ingeniería Industrial", "Universidad Catolica", 34);
-const manufacturaYMecanizado = new Materia("Manufactura y Mecanizado", "IND-112", "Ing. Jorge Salvatierra", "Martes 7-9, Jueves 7-9, Viernes 7-9", "Aula 6 N3, Lab de Procesos", "Diseno Indsutrial", "Ingeniería Industrial", "Universidad Catolica", 15);
-const antropologiaYValores = new Materia("Antropología y Valores", "FCH-101", "Exalta Gabriela", "Martes 9-11, Jueves 9-11", "Aula 4 N3, Aula B2-1", "Ninguno", "Ingeniería Industrial", "Universidad Catolica", 61);
-const programacion1 = new Materia("Programación 1", "SIS-112", "Ing. Eddy Escalante", "Lunes 11-12:20, Viernes 9-11:30", "Laboratorio de Computo 5 C2-2", "Intro a Progra", "Ingeniería Industrial ", "Universidad Catolica", 16);
-const probabilidadYEstadistica = new Materia("Probabilidad y Estadística", "MAT-142", "Carmen Barca", "Martes 11-12:20, Jueves 11-12:20", "Lab de Computo 2 D2-1", "Ninguno", "Ingeniería Industrial", "Universidad Catolica", 33);
-const fisicaYLaboratorio = new Materia("Física y Laboratorio", "FIS-111", "Hugo Lobo, Roberto Carlos", "Lunes 9-11, Miércoles 9-11, Miercoles 9-12:20", "Aula E2-5, Lab de Procesos", "Ninguno", "Ingeniería Industrial", "Universidad Catolica", 45);
+const calculo1 = new Materia("Cálculo 1", "MAT-132", "Victor Hugo Aapiazu", "Lunes 7-9, Miércoles 7-9", "Aula 10 N4", "Mate Basica", "Ingeniería Industrial", "Universidad Catolica", 34, "presencial", 60, "[Números Complejo, Derivada, Cálculo Diferencial, Cálculo Integral, Integral, Sucesiones y Series Numéricas]",-17.695191,-63.1514697 );
+const manufacturaYMecanizado = new Materia("Manufactura y Mecanizado", "IND-112", "Ing. Jorge Salvatierra", "Martes 7-9, Jueves 7-9, Viernes 7-9", "Aula 6 N3, Lab de Procesos", "Diseno Indsutrial", "Ingeniería Industrial", "Universidad Catolica", 15, "presencial", 60, "[Procesos de manufactura, mecanizado, materiales, metrologia]",-17.695191,-63.1514697 );
+const antropologiaYValores = new Materia("Antropología y Valores", "FCH-101", "Exalta Gabriela", "Martes 9-11, Jueves 9-11", "Aula 4 N3, Aula B2-1", "Ninguno", "Ingeniería Industrial", "Universidad Catolica", 61, "presencial", 60, "[Antropología social, cultural, física y arqueológica]", -17.695191,-63.1514697 );
+const programacion1 = new Materia("Programación 1", "SIS-112", "Ing. Eddy Escalante", "Lunes 11-12:20, Viernes 9-11:30", "Laboratorio de Computo 5 C2-2", "Intro a Progra", "Ingeniería Industrial ", "Universidad Catolica", 16, "presencial", 60, "[Lenguajes de programcion, Programacion orientada a objetos, algoritmos y diagramas]", -17.695191,-63.1514697 );
+const probabilidadYEstadistica = new Materia("Probabilidad y Estadística", "MAT-142", "Carmen Barca", "Martes 11-12:20, Jueves 11-12:20", "Lab de Computo 2 D2-1", "Ninguno", "Ingeniería Industrial", "Universidad Catolica", 33, "presencial", 60, "[Datos agrupados, datos sin agrupar, graficos de datos",-17.695191,-63.1514697  );
+const fisicaYLaboratorio = new Materia("Física y Laboratorio", "FIS-111", "Hugo Lobo, Roberto Carlos", "Lunes 9-11, Miércoles 9-11, Miercoles 9-12:20", "Aula E2-5, Lab de Procesos", "Ninguno", "Ingeniería Industrial", "Universidad Catolica", 45, "presencial",60, "[Vectores, conversiones, estatica, dianmica]",-17.695191,-63.1514697 );
 
 // Inicializar los elementos HTML
 const materia1 = document.getElementById('calculo');
@@ -380,6 +434,84 @@ function botonModificarCantidadInscritosFisica() {
 function botonModificarCantidadInscritosProba() {
   probabilidad.textContent = probabilidadYEstadistica.modificarCantidadInscritos();
 }
+
+function botonModificarmodalidadCalculo() {
+ calculo.textContent = calculo1.modificaModalidad();
+}
+function botonModificarmodalidadManu() {
+  manufactura.textContent = manufacturaYMecanizado.modificaModalidad();
+}
+function botonModificarmodalidadAntro() {
+  antropologia.textContent = antropologiaYValores.modificaModalidad();
+}
+function botonModificarmodalidadProgra() {
+  programacion.textContent = programacion1.modificaModalidad();
+}
+function botonModificarmodalidadFisica() {
+  fisica.textContent = fisicaYLaboratorio.modificaModalidad();
+}
+function botonModificarmodalidadProba() {
+  probabilidad.textContent = probabilidadYEstadistica.modificaModalidad();
+}
+
+function botonModificarCaliCalculo() {
+  calculo.textContent = calculo1.modificarCalificacionMinima();
+}
+function botonModificarCaliManu() {
+  manufactura.textContent = manufacturaYMecanizado.modificarCalificacionMinima();
+}
+function botonModificarCaliAntro() {
+  antropologia.textContent = antropologiaYValores.modificarCalificacionMinima();
+}
+function botonModificarCaliProgra() {
+  programacion.textContent = programacion1.modificarCalificacionMinima();
+}
+function botonModificarCaliFisica() {
+  fisica.textContent = fisicaYLaboratorio.modificarCalificacionMinima();
+}
+function botonModificarCaliProba() {
+  probabilidad.textContent = probabilidadYEstadistica.modificarCalificacionMinima();
+}
+
+function botonModificarTemasCalculo() {
+  calculo.textContent = calculo1.modificarTemas();
+}
+function botonModificarTemasManu() {
+  manufactura.textContent = manufacturaYMecanizado.modificarTemas();
+}
+function botonModificarTemasAntro() {
+  antropologia.textContent = antropologiaYValores.modificarTemas();
+}
+function botonModificarTemasProgra() {
+  programacion.textContent = programacion1.modificarTemas();
+}
+function botonModificarTemasFisica() {
+  fisica.textContent = fisicaYLaboratorio.modificarTemas();
+}
+function botonModificarTemasProba() {
+  probabilidad.textContent = probabilidadYEstadistica.modificarTemas();
+}
+
+function botonModificarUbiCalculo() {
+  calculo.textContent = calculo1.modificarUbicacion();
+}
+function botonModificarUbiManu() {
+  manufactura.textContent = manufacturaYMecanizado.modificarUbicacion();
+}
+function botonModificarUbiAntro() {
+  antropologia.textContent = antropologiaYValores.modificarUbicacion();
+}
+function botonModificarUbiProgra() {
+  programacion.textContent = programacion1.modificarUbicacion();
+}
+function botonModificarUbiFisica() {
+  fisica.textContent = fisicaYLaboratorio.modificarUbicacion();
+}
+function botonModificarUbiProba() {
+  probabilidad.textContent = probabilidadYEstadistica.modificarUbicacion();
+}
+
+
 
 function botonEliminarAtributosCalculo() {
   calculo.textContent = calculo1.eliminarAtributos();
