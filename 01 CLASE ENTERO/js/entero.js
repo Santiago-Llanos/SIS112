@@ -51,7 +51,7 @@ class Entero {
     }
 
     esPosiNega(){
-        return (this.Num > 0)
+        return (this.Num >= 0)
     }
 }
 // Las funciones = button HTML
