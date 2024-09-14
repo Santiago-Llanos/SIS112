@@ -53,7 +53,28 @@ class Entero {
     esPosiNega(){
         return (this.Num >= 0)
     }
+
+    factorial(){
+        if (this.Num < 0) return "No hay factorial de numero negativos";
+        let factorial = 1, i = this.Num;
+        while (i > 1) factorial *= i--;
+        return factorial;
+    }
+
+    esPerfecto(){
+        let suma = 0;  // Inicializamos una variable para almacenar la suma de divisores
+
+        // Recorremos desde 1 hasta Num-1 para encontrar los divisores
+        for (let i = 1; i < this.Num; i++) {
+            if (this.Num % i === 0) {  // Si i es divisor de Num
+                suma += i;  // Añadimos i a la suma
+            }
+        } 
+        // Comprobamos si la suma de los divisores es igual al número
+        return suma === this.Num;
+    }
 }
+
 // Las funciones = button HTML
 var ClaseEntero = new Entero(0); //Se inicializo en 0
 
@@ -88,3 +109,15 @@ function esPosiNegaNum(){
     var resp = respuesta ? "Es Num Positivo":"Es Num Negativo";
     ClaseEntero.showResultado(resp)
 }
+
+function factorialNum(){
+    var respuesta = ClaseEntero.factorial();
+    ClaseEntero.showResultado("Factorial:" + respuesta)
+}
+
+function esPerfectoNum(){
+    var respuesta = ClaseEntero.esPerfecto();
+    var resp = respuesta ? "Es Num perfecto":"No es Num perfecto"
+    ClaseEntero.showResultado(resp)
+}
+
