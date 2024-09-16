@@ -73,6 +73,25 @@ class Entero {
         // Comprobamos si la suma de los divisores es igual al número
         return suma === this.Num;
     }
+
+    esPrimo(){
+        if (this.Num <= 1) return false;
+        for (let i = 2; i <= Math.sqrt(this.Num); i++) {
+            if (this.Num % i === 0) return false;
+        }
+        return true;
+    }
+
+    Fibonucci(){
+        if (this.Num <= 0) return "No hay sucesión de Fibonacci para números menores o iguales a 0";
+        
+        let fibo = [0, 1];
+        while (fibo[fibo.length - 1] + fibo[fibo.length - 2] <= this.Num) {
+            fibo.push(fibo[fibo.length - 1] + fibo[fibo.length - 2]);
+        }
+        
+        return fibo;
+    }
 }
 
 // Las funciones = button HTML
@@ -119,5 +138,16 @@ function esPerfectoNum(){
     var respuesta = ClaseEntero.esPerfecto();
     var resp = respuesta ? "Es Num perfecto":"No es Num perfecto"
     ClaseEntero.showResultado(resp)
+}
+
+function esPrimoNum(){
+    var respuesta = ClaseEntero.esPrimo();
+    var resp = respuesta ? "Es Num Primo" : "No es Num Primo";
+    ClaseEntero.showResultado(resp);
+}
+
+function FibonucciNum(){
+    var respuesta = ClaseEntero.Fibonucci();
+    ClaseEntero.showResultado("Fibonacci: " + respuesta.join(", "));
 }
 
