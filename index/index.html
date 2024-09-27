@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Llanos Arellano</title>
+    <style>
+        /* Diseño general */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        a:hover {
+            background-color: #45a049;
+            transform: translateY(-5px);
+        }
+
+        /* Adaptabilidad para móviles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            a {
+                font-size: 1.2rem;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            a {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gestor de Funciones</h1>
+        <h2>NOMBRE: Santiago Llanos Arellano<br>
+            CARRERA: Ing. Industrial<br>
+            UNIVERSIDAD: UCB<br>
+            ASIGNATURA: Programación 1
+        </h2>
+
+        <div class="links">
+            <a href="http://llanos.somee.com/entero.html">Gestión de Números Enteros</a>
+            <a href="http://llanos.somee.com/cadena.html">Manipulación de Cadenas</a>
+            <a href="http://llanos.somee.com/lista-enteros.html">Lista de Enteros</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
