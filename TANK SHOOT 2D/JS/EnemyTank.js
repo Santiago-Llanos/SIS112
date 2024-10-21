@@ -6,7 +6,7 @@ class EnemyTank{
 
     constructor(_posX, _PosY, _direccionDisparo, _Vidas){
         this.posX = _posX;
-        this.posY = _posY;
+        this.posY = _PosY;
         this.direccionDisparo = _direccionDisparo;
         this.vidas = _Vidas;
     }
