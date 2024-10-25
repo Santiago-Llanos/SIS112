@@ -7,8 +7,8 @@ function resizeCanvas() {
     canvas.width = window.innerWidth * 0.9;
     canvas.height = window.innerHeight * 0.9;
 
-    canvas.width = Math.round(canvas.width / 50)* 50;
-    canvas.height = Math.round(canvas.height / 50)* 50;
+    canvas.width = Math.round(canvas.width / 50)* 50; // Lo dividimos en porciones iguales para que el marco del juego no quede espacion en el tanque
+    canvas.height = Math.round(canvas.height / 50)* 50; // Lo mismo que arriba
     
 
 
@@ -78,7 +78,7 @@ window.addEventListener('keydown', function (e) {
 }
 );
 
-//Anadir moviemitno aleatorio al enemigo
+//Anadir movimiento aleatorio al enemigo
 function moveEnemyTankRandomly(enemyTank){
     const directions = ['left', 'right', 'up', 'down'];
     const randomDirection = directions[Math.floor(Math.random()* directions.length)];
