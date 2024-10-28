@@ -138,11 +138,11 @@ function drawEscenario(ctx, escenario) {
 
             switch(cell) {
                 case 0 :
-                    ctx.fillRect = "orange";
+                    ctx.fillStyle = "black";
                     ctx.fillRect(x, y, game.anchoCelda, game.altoCelda);
                     break;
                 case 1:
-                    ctx.fillRect = "gray";
+                    ctx.fillStyle = "gray";
                     ctx.fillRect(x, y, game.anchoCelda, game.altoCelda);
                     // var wall = new Image();
                     // wall.src = "./ASSETS/pared.webp";
@@ -161,6 +161,8 @@ function drawEscenario(ctx, escenario) {
 function updateGame() {
 // Limpiamos el canvas en cada frame
 ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+drawEscenario(ctx, escenario);
 playerTank.drawTank(ctx);
 
 enemyTank1.drawEnemyTank(ctx); // Dibujamos el tanque enemigo
