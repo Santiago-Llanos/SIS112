@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"name": "POO",
+			"path": "../../POO"
+		},
+		{
+			"name": "PRIMER PARCIAL",
+			"path": "../../PRIMER PARCIAL"
+		},
+		{
+			"name": "Python de prueba",
+			"path": "../../../../OneDrive/Documentos/Segundo Semestre/Programacion 1/Python de prueba"
+		},
+		{
+			"name": "01 CLASE ENTERO",
+			"path": "../../01 CLASE ENTERO"
+		},
+		{
+			"name": "02 CLASE CADENAS",
+			"path": "../../02 CLASE CADENAS"
+		},
+		{
+			"name": "03 CLASE LISTA ENTEROS",
+			"path": "../../03 CLASE LISTA ENTEROS"
+		},
+		{
+			"path": "../../index"
+		},
+		{
+			"path": "../../PY EN JS"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../INVASORES ESPACIALES"
+		}
+	],
+	"settings": {}
+}
